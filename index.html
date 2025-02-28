@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Empowerment Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js">
+    function showContent(sectionId) {
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.style.display = 'none';
+        });
+        document.getElementById(sectionId).style.display = 'block';
+    }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Women Empowerment Hub 🌸</h1>
+        <nav>
+            <ul>
+                <li><a href="stories.html">Inspiring Stories</a></li>
+                <li><a href="skills.html">Skill Development</a></li>
+                <li><a href="jobs.html">Job Board</a></li>
+                <li><a href="safety.html">Safety Resources</a></li>
+                <li><a href="forum.html">Support Forum</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Empowering Women, Transforming Lives</h2>
+            <p>Join our community and unlock your full potential.</p>
+            <button onclick="location.href='stories.html'">Get Started</button>
+        </div>
+    </section>
+
+    <section id="categories" class="category-container">
+        <h2>Explore Our Platform</h2>
+        <div class="category-card" onclick="location.href='stories.html'">
+            <h3>Inspiring Stories</h3>
+        </div>
+        <div class="category-card" onclick="location.href='skills.html'">
+            <h3>Skill Development</h3>
+        </div>
+        <div class="category-card" onclick="location.href='jobs.html'">
+            <h3>Job Board</h3>
+        </div>
+        <div class="category-card" onclick="location.href='safety.html'">
+            <h3>Safety Resources</h3>
+        </div>
+        <div class="category-card" onclick="location.href='forum.html'">
+            <h3>Support Forum</h3>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Women Empowerment Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
